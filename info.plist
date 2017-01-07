@@ -223,7 +223,24 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Alfred3 workflow for shanbay.com</string>
+	<string>一个利用扇贝网API查词/记生词的 Alfred3 Workflow 插件。
+
+功能
+
+查词
+添加生词到扇贝
+发音
+显示例句
+显示笔记
+除此之外，
+
+自动更新
+高度可定制（默认情况下只会显示一条例句、三条笔记，你可以自己方便的定制这些）
+
+###
+具体使用及设置方法请参照这里： 
+https://ghui.me/post/2017/01/ishanbay/
+###</string>
 	<key>uidata</key>
 	<dict>
 		<key>24D66167-A184-4CA3-BF69-EFA1063DE87D</key>

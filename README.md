@@ -16,6 +16,12 @@
 
 具体使用详情请访问[这里](https://ghui.me/post/2017/01/ishanbay/)
 
+
+
+## 安装
+
+到[这里](https://github.com/ghuiii/iShanbay/releases)下载最新版, 之后双击即可完成安装。
+
 ## Why Another one?
 
 [这里](https://github.com/alswl/shanbay-alfred2)其实已经存在了一个类似功能的workflow，之所以再开发一个，原因有以下几点：
