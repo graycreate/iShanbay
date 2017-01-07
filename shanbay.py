@@ -137,7 +137,7 @@ def say(word):
 def add(word_id):
     log.debug('word_id: ' + str(word_id))
     if not is_authed():
-        notify('请授权后再添加!', '详情: ghui.me/alfred/ishanbay')
+        notify('请授权后再添加!', '详情: https://ghui.me/post/2017/01/ishanbay/')
         do_auth()
         return 0
     else:
@@ -167,7 +167,7 @@ def main(wf):
 
 if __name__ == u"__main__":
     wf = Workflow3(update_settings={
-        'github_slug': 'ghuiii/ishanbay'
+        'github_slug': 'ghuiii/iShanbay'
     })
     log = wf.logger
     sys.exit(wf.run(main))

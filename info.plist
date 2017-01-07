@@ -185,7 +185,7 @@
 				<key>keyword</key>
 				<string>sauth</string>
 				<key>subtext</key>
-				<string>粘贴授权码，授权后可以添加单词、查询例句、收藏例句等。</string>
+				<string>粘贴授权成功回调网址，授权后可以添加单词、显示笔记等。</string>
 				<key>text</key>
 				<string>扇贝网授权</string>
 				<key>withspace</key>
