@@ -8,7 +8,7 @@ import os
 import time
 from urlparse import urlparse
 from workflow import Workflow3, web
-from workflow import ICON_WEB, ICON_WARNING
+from workflow import ICON_WEB, ICON_WARNING, ICON_INFO
 from workflow import PasswordNotFound
 from workflow.notify import notify
 
@@ -115,6 +115,7 @@ def search(word):
         log.debug('setWord: ' + str(word))
         wf.store_data('current_word', word)
         data = result['data']
+        word = data['content']
         word_id = str(data['id'])
         word_And_id = data['content'] + SEPARATOR + word_id
         pron = data['pron']
@@ -170,6 +171,8 @@ if __name__ == u"__main__":
         'github_slug': 'ghuiii/iShanbay'
     })
     log = wf.logger
+    if wf.update_available:
+        wf.start_update()
     sys.exit(wf.run(main))
     if wf.update_available:
         wf.start_update()

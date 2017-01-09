@@ -4,6 +4,8 @@
 <dict>
 	<key>bundleid</key>
 	<string>me.ghui.workflow.shanbay</string>
+	<key>category</key>
+	<string>Study</string>
 	<key>connections</key>
 	<dict>
 		<key>1D4312B0-234C-4733-8055-F650F28A3744</key>
@@ -372,8 +374,8 @@ https://ghui.me/post/2017/01/ishanbay/
 		<string>3</string>
 	</dict>
 	<key>version</key>
-	<string>0.5.1</string>
+	<string>0.5.0</string>
 	<key>webaddress</key>
-	<string>https://ghui.me</string>
+	<string>https://ghui.me/post/2017/01/ishanbay/</string>
 </dict>
 </plist>
