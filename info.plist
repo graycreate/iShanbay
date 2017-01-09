@@ -6,6 +6,19 @@
 	<string>me.ghui.workflow.shanbay</string>
 	<key>connections</key>
 	<dict>
+		<key>1D4312B0-234C-4733-8055-F650F28A3744</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BCA85BC1-9E60-451E-8812-260C06194864</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>24D66167-A184-4CA3-BF69-EFA1063DE87D</key>
 		<array/>
 		<key>28873CCB-B63D-49E5-9390-A552D40A6417</key>
@@ -87,6 +100,37 @@
 			<string>E8FE3BA8-27E5-4B8E-8B3A-E856C4DDC190</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>1</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>3</integer>
+				<key>hotmod</key>
+				<integer>262144</integer>
+				<key>hotstring</key>
+				<string>F</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>1D4312B0-234C-4733-8055-F650F28A3744</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -226,7 +270,7 @@
 	<string>一个利用扇贝网API查词/记生词的 Alfred3 Workflow 插件。
 
 功能
-
+### v0.5.0
 查词
 添加生词到扇贝
 发音
@@ -240,9 +284,21 @@
 ###
 具体使用及设置方法请参照这里： 
 https://ghui.me/post/2017/01/ishanbay/
-###</string>
+###
+
+### v0.5.1
+增加 control-f Hotkey，直接查询系统选中词或调出查询窗口。</string>
 	<key>uidata</key>
 	<dict>
+		<key>1D4312B0-234C-4733-8055-F650F28A3744</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>60</integer>
+			<key>ypos</key>
+			<integer>200</integer>
+		</dict>
 		<key>24D66167-A184-4CA3-BF69-EFA1063DE87D</key>
 		<dict>
 			<key>colorindex</key>
@@ -259,7 +315,7 @@ https://ghui.me/post/2017/01/ishanbay/
 			<key>note</key>
 			<string>添加到生词本</string>
 			<key>xpos</key>
-			<integer>410</integer>
+			<integer>590</integer>
 			<key>ypos</key>
 			<integer>370</integer>
 		</dict>
@@ -281,18 +337,18 @@ https://ghui.me/post/2017/01/ishanbay/
 			<key>note</key>
 			<string>发音</string>
 			<key>xpos</key>
-			<integer>410</integer>
+			<integer>640</integer>
 			<key>ypos</key>
-			<integer>190</integer>
+			<integer>200</integer>
 		</dict>
 		<key>BCA85BC1-9E60-451E-8812-260C06194864</key>
 		<dict>
 			<key>note</key>
 			<string>查词</string>
 			<key>xpos</key>
-			<integer>20</integer>
+			<integer>270</integer>
 			<key>ypos</key>
-			<integer>190</integer>
+			<integer>200</integer>
 		</dict>
 		<key>E8FE3BA8-27E5-4B8E-8B3A-E856C4DDC190</key>
 		<dict>
@@ -301,7 +357,7 @@ https://ghui.me/post/2017/01/ishanbay/
 			<key>note</key>
 			<string>在扇贝网查看</string>
 			<key>xpos</key>
-			<integer>410</integer>
+			<integer>560</integer>
 			<key>ypos</key>
 			<integer>30</integer>
 		</dict>
@@ -316,7 +372,7 @@ https://ghui.me/post/2017/01/ishanbay/
 		<string>3</string>
 	</dict>
 	<key>version</key>
-	<string>0.5.0</string>
+	<string>0.5.1</string>
 	<key>webaddress</key>
 	<string>https://ghui.me</string>
 </dict>
