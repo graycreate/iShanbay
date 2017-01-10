@@ -288,8 +288,8 @@
 https://ghui.me/post/2017/01/ishanbay/
 ###
 
-### v0.5.1
-增加 control-f Hotkey，直接查询系统选中词或调出查询窗口。</string>
+### v1.0.0
+增加 Hotkey，直接查询系统选中词或调出查询窗口。</string>
 	<key>uidata</key>
 	<dict>
 		<key>1D4312B0-234C-4733-8055-F650F28A3744</key>
