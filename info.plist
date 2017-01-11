@@ -317,7 +317,7 @@ https://ghui.me/post/2017/01/ishanbay/
 			<key>note</key>
 			<string>添加到生词本</string>
 			<key>xpos</key>
-			<integer>590</integer>
+			<integer>570</integer>
 			<key>ypos</key>
 			<integer>370</integer>
 		</dict>
@@ -339,12 +339,14 @@ https://ghui.me/post/2017/01/ishanbay/
 			<key>note</key>
 			<string>发音</string>
 			<key>xpos</key>
-			<integer>640</integer>
+			<integer>560</integer>
 			<key>ypos</key>
 			<integer>200</integer>
 		</dict>
 		<key>BCA85BC1-9E60-451E-8812-260C06194864</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
 			<key>note</key>
 			<string>查词</string>
 			<key>xpos</key>
