@@ -168,11 +168,10 @@ def main(wf):
 
 if __name__ == u"__main__":
     wf = Workflow3(update_settings={
-        'github_slug': 'ghuiii/iShanbay'
+        'github_slug': 'ghuiii/iShanbay',
+        'frequency': 0.2
     })
     log = wf.logger
     if wf.update_available:
         wf.start_update()
     sys.exit(wf.run(main))
-    if wf.update_available:
-        wf.start_update()
