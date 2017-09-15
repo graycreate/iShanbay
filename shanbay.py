@@ -69,13 +69,15 @@ def do_auth():
 def get_example(word_id):
     if word_id == 0:  # invalid
         return 0
+    max_example_num = int(get_env('max_example_num'))
+    if max_example_num <= 0:
+        return 0
 
     params = dict(vocabulary_id=word_id)
     r = web.get(EXAMPLE_URL, params)
     r.raise_for_status()
     examples = sorted(r.json()['data'], key=lambda value: value[
         'likes'], reverse=True)
-    max_example_num = int(get_env('max_example_num'))
     examples = examples[:max_example_num]
 
     for example in examples:
@@ -90,12 +92,14 @@ def get_example(word_id):
 def get_note(word_id):
     if not is_authed():
         return 0
+    max_notes_num = int(get_env('max_note_num'))
+    if max_notes_num <= 0:
+        return 0
     params = dict(vocabulary_id=word_id, access_token=get_token())
     r = web.get(NOTE_URL, params)
     r.raise_for_status()
     notes = sorted(r.json()['data'], key=lambda value: value[
         'likes'], reverse=True)
-    max_notes_num = int(get_env('max_note_num'))
     notes = notes[:max_notes_num]
     for note in notes:
         title = note['content']
